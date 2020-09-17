@@ -1,0 +1,28 @@
+{
+  "name": "restapi-blog",
+  "version": "1.0.0",
+  "description": "Rest API using nodejs and express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabano89/RestAPI-Blog.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "mongodb"
+  ],
+  "author": "KABANO Gilles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabano89/RestAPI-Blog/issues"
+  },
+  "homepage": "https://github.com/kabano89/RestAPI-Blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.5"
+  }
+}
