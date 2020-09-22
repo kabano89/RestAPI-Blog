@@ -11,15 +11,27 @@ router.get('/', (req, res) => {
 
 });
 
-// Import contact controller
-var articleController = require('./articleController');// Article routes
-router.route('/articles')
-    .get(articleController.index)
-    .post(articleController.new);
+// Import article controller
+var articleController = require('./articleController');
 
-router.route('/articles/:article_id')
-    .get(articleController.view)
-    .patch(articleController.update)
-    .put(articleController.update)
-    .delete(articleController.delete);// Export API routes
+// Article routes
+// router.route('/articles')
+//     .get(articleController.index)
+//     .post(articleController.new);
+
+router.route('/articles').get(articleController.index);
+
+router.route('/articles').post(articleController.new);
+
+
+router.route('/articles/:article_id').get(articleController.view);
+
+router.route('/articles/:article_id').patch(articleController.update);
+
+router.route('/articles/:article_id').put(articleController.update);
+
+router.route('/articles/:article_id').delete(articleController.delete);
+
+
+// Export API routes
 module.exports = router;

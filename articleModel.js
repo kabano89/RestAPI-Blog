@@ -19,6 +19,7 @@ var articleSchema = mongoose.Schema({
 
 // Export article model
 var Article = module.exports = mongoose.model('article', articleSchema);
+
 module.exports.get = function (callback, limit) {
     Article.find(callback).limit(limit);
 }

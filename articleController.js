@@ -26,8 +26,7 @@ exports.new = function (req, res) {
         
     // save the contact and check for errors
     article.save(function (err) {
-        // if (err)
-        //     res.json(err);
+        
     res.json({
             message: 'New article created!',
             data: article
